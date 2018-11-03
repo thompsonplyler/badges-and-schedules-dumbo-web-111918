@@ -29,8 +29,13 @@ end
 
 def printer(attendees)
   binding.pry
-  puts batch_badge_creator(attendees)
-  puts assign_rooms(attendees)
+ 
+  
+  attendees.each_with_index do |name, number|
+    print badge_maker(name)
+    print assign_rooms(name)
+  end
+  
 end
 
 # "Hello, my name is _____"
