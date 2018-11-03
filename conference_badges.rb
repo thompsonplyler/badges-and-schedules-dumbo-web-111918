@@ -28,6 +28,7 @@ room_array
 end
 
 def printer(attendees)
+  binding.pry
   badge_maker(name).each do |hello_name|
     print hello_name
   end
