@@ -30,10 +30,8 @@ end
 def printer(attendees)
   binding.pry
  
-  
   attendees.each do |name|
     print badge_maker(name)
-    print assign_rooms(name)
   end
   
 end
