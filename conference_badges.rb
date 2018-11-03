@@ -30,11 +30,11 @@ end
 def printer(attendees)
   binding.pry
   badge_maker(attendees).each do |name|
-    print name
+    puts name
   end
   
   assign_rooms(attendees).each do |assignment|
-    print assignment
+    puts assignment
   end
 end 
   
