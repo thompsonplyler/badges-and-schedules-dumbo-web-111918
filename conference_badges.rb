@@ -27,8 +27,7 @@ room_array
 
 end
 
-def printer(attendees)
-  binding.pry
+def printer(attendee)
   badge_badge_creator(attendees).each do |badge|
     puts badge
   assign_rooms(attendees).each do |assignment|
