@@ -31,9 +31,9 @@ def printer(attendees)
   binding.pry
  
   
-  attendees.each_with_index do |name, number|
+  attendees.each do |name|
     print badge_maker(name)
-    print assign_rooms(name, number)
+    print assign_rooms(name)
   end
   
 end
