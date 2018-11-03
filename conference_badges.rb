@@ -33,7 +33,7 @@ def printer(attendees)
   
   attendees.each_with_index do |name, number|
     print badge_maker(name)
-    print assign_rooms(name)
+    print assign_rooms(name, number)
   end
   
 end
