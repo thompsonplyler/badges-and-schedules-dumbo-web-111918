@@ -28,13 +28,15 @@ room_array
 end
 
 def printer(attendees)
-  binding.pry
- 
-  attendees.each do |name|
-    print badge_maker(name)
+  badge_maker(name).each do |hello_name|
+    print hello_name
   end
   
-end
+  assign_rooms(attendees).each do |room_assignment|
+    print room_assignment
+  end
+end 
+  
 
 # "Hello, my name is _____"
 # "Hello, _____! You'll be assigned to room ___" (rooms 1-7)
