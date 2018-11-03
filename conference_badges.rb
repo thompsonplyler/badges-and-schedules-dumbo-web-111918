@@ -34,7 +34,7 @@ def printer(attendees)
     puts assignment
   end
   end
-end.chomp
+end
   
 
 # "Hello, my name is _____"
