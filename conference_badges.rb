@@ -29,12 +29,12 @@ end
 
 def printer(attendees)
   binding.pry
-  badge_maker(name).each do |hello_name|
-    print hello_name
+  badge_maker(attendees).each do |name|
+    print name
   end
   
-  assign_rooms(attendees).each do |room_assignment|
-    print room_assignment
+  assign_rooms(attendees).each do |assignment|
+    print assignment
   end
 end 
   
